@@ -13,8 +13,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        gui/mainwindow.cpp
+        gui/mainwindow.cpp \
+    models/aerodynamics.cpp \
+    models/dynamics.cpp \
+    tools/math.cpp \
+    tools/timer.cpp
 
-HEADERS  += gui/mainwindow.h
+HEADERS  += gui/mainwindow.h \
+    models/aerodynamics.h \
+    models/dynamics.h \
+    tools/math.h \
+    tools/timer.h
 
 FORMS    += gui/mainwindow.ui
