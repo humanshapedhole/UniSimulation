@@ -10,6 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = UniSimulation
 TEMPLATE = app
+CONFIG += c++11
 
 
 SOURCES += main.cpp\
@@ -17,12 +18,14 @@ SOURCES += main.cpp\
     models/aerodynamics.cpp \
     models/dynamics.cpp \
     tools/math.cpp \
-    tools/timer.cpp
+    tools/timer.cpp \
+    kernel/loop.cpp
 
 HEADERS  += gui/mainwindow.h \
     models/aerodynamics.h \
     models/dynamics.h \
     tools/math.h \
-    tools/timer.h
+    tools/timer.h \
+    kernel/loop.h
 
 FORMS    += gui/mainwindow.ui

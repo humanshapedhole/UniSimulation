@@ -6,6 +6,10 @@ class Math
 {
 public:
     Math();
+    
+    int sqr(int);
+    
+    double sqr(double);
 };
 
 #endif // MATH_H
